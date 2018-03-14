@@ -1,0 +1,177 @@
+/*-------------------------------------------------
+   VARIABLES: choose the colors of your banner
+-------------------------------------------------*/
+
+$main-color: #5270FE;
+$background-color: #BFD7FF;
+
+/*---------------------------------------
+   SECTION:  BOXES
+-----------------------------------------*/
+
+.section-header {
+    padding-bottom: 20px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.banner-box {
+    margin-bottom: 20px;
+    background-image: url("https://i.imgur.com/4qwhXM3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $background-color; /* to be sure that even if the image above will not be loaded there will be at least a colored background */
+}
+
+.x-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: center;
+    color: $main-color;
+}
+
+.description p {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.banner-box .single-box {
+    padding-bottom: 20px;
+    .x-icon {
+        font-size: 70px;
+    }
+}
+
+
+//COLUMNS MANAGEMENT
+
+.col3 {
+    width: 30%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col2 {
+    width: 45%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col4 {
+    width: 22.5%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container::after, .row::after {
+    clear: both;
+}
+
+.col2, .col3, .col4 {
+    text-align: center;
+}
+
+.row::after {
+    content: " ";
+    display: table;
+}
+
+//ICON AND BOX HEADING COLOR
+
+.banner-box .single-box .x-icon, .single-box h3 {
+    color: $main-color;
+}
+
+//BOX HEADING POSITIONING
+
+.banner-box .single-box h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+//COLORED LINE
+
+.colored-line {
+    margin: auto;
+    width: 165px;
+    height: 1px;
+    background: $main-color;
+}
+
+//SINGLE BOX, TEXT ALIGNMENT
+
+.box p {
+    text-align: center;
+}
+
+//TEXT ALIGNMENT INSIDE BUTTONS
+
+#my-button {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+//IMAGE SIZE AS ICON SIZE
+
+.responsive-img {
+    border-style: none;
+    border-width: 1px;
+    height: 70px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+//LIST ALIGNMENT
+
+.feature-list {
+    text-align: center;
+    list-style-type: none;
+}
+
+
+//BUTTON BACKGROUND
+
+.col2, .col3, .col4 {
+    .btn.btn-icon-text.ember-view {
+        background: $main-color;
+    }
+}
+
+//CLOSE BUTTON ON THE TOP RIGHT
+
+.banner-box .close {
+    border: none;
+    background: transparent;
+    padding-top: 5px;
+    float: right;
+}
+
+//MAKE IT A FULL WIDTH BANNER
+
+.banner-box .container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.banner-box {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    
+}
+#main-outlet {
+    padding-top: 64px; /*this value must be changed if the height of the header has been changed*/
+}
