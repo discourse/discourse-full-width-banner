@@ -1,0 +1,13 @@
+//MOBILE DEVICES
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+    .col2, .col3, .col4 {
+        width: 90%;
+    }
+    .feature-list {
+        text-align: center;
+    }
+    .banner-box .container {
+        max-width: 90%;
+    }    
+}
