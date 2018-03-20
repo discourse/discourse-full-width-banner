@@ -17,7 +17,7 @@ $background-color: #BFD7FF;
 }
 
 .banner-box {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     background-image: url("https://i.imgur.com/4qwhXM3.jpg");
     background-size: cover;
     background-position: center center;
@@ -174,4 +174,9 @@ $background-color: #BFD7FF;
 }
 #main-outlet {
     padding-top: 64px; /*this value must be changed if the height of the header has been changed*/
+}
+.navigation-container,
+.alert.alert-info {
+    margin-top: 18px;
+    margin-bottom: 0px;
 }
