@@ -1,5 +1,6 @@
 {
   "name": "Full Width banner",
   "about_url": "https://github.com/discourse/discourse-full-width-banner",
-  "license_url": "https://github.com/discourse/discourse-full-width-banner/blob/master/LICENSE"
+  "license_url": "https://github.com/discourse/discourse-full-width-banner/blob/master/LICENSE",
+  "component": true
 }
