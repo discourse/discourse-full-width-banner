@@ -5,46 +5,46 @@
 	<!--ADD A "CLOSE BANNER" BUTTON ON THE TOP RIGHT-->
 	<!--To disable this button, comment the <button> </button> tag-->
 
-	<button type="button" class="close" onclick='$(this).parent().remove();'>
+	<button type="button" class="close">
              <i class="fa fa-times d-icon d-icon-times" title="Close."></i>
-        </button>	
-    
+        </button>
+
         <div class="container">
-	
+
             <!--SECTION HEADER-->
 	        <div class="section-header ">
-		
+
 		        <!--TITLE-->
 		        <h2 class="x-title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 
 		        <div class="colored-line"></div>
 
 		        <div class="description"><p>
-		        Nulla ullamcorper augue vel sodales pellentesque. 
-		        Sed vitae sapien sit amet mauris consequat malesuada. Vestibulum vitae iaculis nisl, vel aliquet velit. 
+		        Nulla ullamcorper augue vel sodales pellentesque.
+		        Sed vitae sapien sit amet mauris consequat malesuada. Vestibulum vitae iaculis nisl, vel aliquet velit.
 		        Fusce venenatis laoreet diam, non dictum nisl vestibulum non.</p>
 		        </div>
 		        <div class="colored-line"></div>
 	        </div>
 	        <!--/END SECTION HEADER-->
-	
+
 	            <div class="row">
-		
+
 
                     <!--SINGLE BOX-->
 		            <div class="col2 single-box" style="float: left;">
-			
+
 			            <!--IMAGE-->
                         <img src="https://i.imgur.com/oRoO3Ya.png" class="responsive-img">
-			
+
 			            <!--HEADING-->
 			            <h3>A simple box</h3>
-			
+
 			            <!--BOX DESCRIPTION-->
-			            <p class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			            <p class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			            Sed id congue eros, sit amet suscipit libero. Nunc vitae placerat est.
 			            Sed ornare sit amet justo eu rutrum. Integer sit amet facilisis ipsum.</p>
-			
+
                 	    <!--LIST-->
 			            <div>
             		        <ul class="feature-list">
@@ -52,47 +52,53 @@
             			        <li><i class="fa fa-heartbeat"></i> One hour of gym</li>
             			        <li><i class="fa fa-book"></i> Rearrange books in the study</li>
             		        </ul>
-                        </div>			
+                        </div>
 
                		    <!--BUTTON-->
                		    <div class="buttons" id="my-button">
                   	    <a href="enter-a-url" class="btn btn-icon-text ember-view"><i class="fa fa-commenting d-icon d-icon-commenting"></i>My new button</a>
                         </div>
-			
+
 		            </div>
 		            <!--/END SINGLE BOX-->
-		
+
 
                     <!--SINGLE BOX-->
 		            <div class="col2 single-box" style="float: right;">
-			
+
 			            <!--IMAGE-->
                         <img src="https://i.imgur.com/ZCXib8B.png" class="responsive-img">
 
-			
+
 			            <!--HEADING-->
 			            <h3>Another simple box</h3>
-			
+
 			            <!--BOX DESCRIPTION-->
-			            <p class="box">Integer velit ante, <a href="www.discourse.org">DISCOURSE</a> amet tristique in, gravida at ligula. 
-			            Sed gravida mauris id neque vestibulum semper. Suspendisse potenti. Nam nec maximus ligula. 
+			            <p class="box">Integer velit ante, <a href="www.discourse.org">DISCOURSE</a> amet tristique in, gravida at ligula.
+			            Sed gravida mauris id neque vestibulum semper. Suspendisse potenti. Nam nec maximus ligula.
 			            Ut eget semper est. Sed ornare sit amet justo eu rutrum. Integer sit amet facilisis ipsum.
-			            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			            Sed id congue eros, sit amet suscipit libero. Nunc vitae placerat est.</p>
 
                		    <!--BUTTON-->
                		    <div class="buttons" id="my-button">
                   	    <a href="enter-a-url" class="btn btn-icon-text ember-view"><i class="fa fa-user-plus d-icon d-icon-user-plus"></i>My new button</a>
-                        </div>			
-			
+                        </div>
+
 		            </div>
 		            <!--/END SINGLE BOX-->
-		
+
 	            </div>
 	            <!--/END ROW-->
-  
+
         </div>
         <!--/END CONTAINER-->
 
 </section>
 <!--/END BANNER BOX SECTION-->
+
+<script>
+  $('.banner-box .close').on('click', function(event) {
+    $(event.target).parent().remove();
+  });
+</script>
